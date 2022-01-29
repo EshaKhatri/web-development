@@ -9,37 +9,64 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
+     <title>bmshospital</title>
     <style>
         .logo {
          width: 300px;
-        height: auto;
+         height: auto;
         }
-        
+        header {  
+background-color: rgba(167, 161, 155, 0.712);  
+left: 0;  
+right: 0;  
+top: 5px;  
+height: 30px;  
+display: flex; 
+align-items: center;   
+}  
+header * {  
+display: inline;  
+}  
+header li {  
+margin: 20px;  
+}  
+header li a {  
+color: rgb(0, 0, 0);  
+text-decoration: none; 
+font-family: sans-serif;
+font-weight: 600; 
+} 
         .welcome{
-            color: black;
-            text-align: center;
+            text-align: left;
+      margin-right: 60px;
+      margin-left: 50px;
+      font-size: 30px;
+      float: left;
+    
         }
-        .services{
-            display: flex;
-            flex-direction: row;
-            
-        }
+       
         .title{
-            height: 100px;
-            text-align: center;
-            color:black;
-            flex: 2;
+            text-align: left;
+            margin-right: 40px;
+            margin-left: 60px;
+            font-size: 20px;
+            font-style: oblique; 
+            font-weight: 400; 
         }
         .phone{
-            color: red;
-            padding: 30px;
-            text-align: center;
+            color: rgb(235, 77, 77);
+            padding-left: 30px;
+            text-align: left;
+            margin-left: 60px;
         }
         .picture{
-            
-            flex: 2;
+            flex-basis: 50%;
         }
+        .container {
+        display: flex;
+        align-items: center;
+        justify-content: center
+      }
         .heading{
             text-align: center;
             color:black;
@@ -49,6 +76,7 @@
             display: flex;
             flex-direction: row;
             justify-content: space-evenly;
+            font-family: sans-serif;
         }
     </style>
 </head>
@@ -56,30 +84,52 @@
     <img src="Images/logo.png" alt="bmshospital" class="logo">
     <hr
       style="
-        height: 0.8px;
+        height: 2px;
         border-width: 0;
-        color: rgb(156, 147, 147);
-        background-color: rgb(156, 147, 147);
+        color: rgb(158, 147, 147);
+        background-color: rgb(158, 147, 147);
       "
-/>
+    />
+    <header>  
+<nav>  
+<ul>  
+<li>  
+<a href="index.html"> Home </a>  
+</li>  
+<li>  
+<a href="doctors.html"> Doctors </a>  
+</li>  
+<li>  
+<a href="ambulance.html"> Ambulance </a>  
+</li>  
+<li> <a href="covid.html"> Covid-19 </a>  
+</li>  
+<li>  
+<a href="lab.html"> Lab tests </a>  
+</li>
+<li>  
+<a href="https://maps.app.goo.gl/8LtMLmSCuywuBxoT9"> Location </a>  
+</li>
+<li> <a href="contact.html"> Contact </a>  
+</li>
+</ul>  
+</nav>  
+</header>  
 <body>
-    <div class="welcome">
-        <h1>WELCOME TO BMS AMBULANCE SERVICES</h1>
-    </div>
     <br>
-    <div class="services">
-        <div class="title">
-            <h2><i>Your health emergency is our priority</i></h2>
+        <h1 class="welcome" >Ambulance Services</h1>
+    
+    <br><br>
+    
+            <p class="title">Your health emergency is our priority.</p>
+            <div class="container">
             <div class="phone">
-                <div class="follow"> <b>Phone:</b><i class="fas fa-mobile-alt"></i> +1800-888-888</div>
+                <b>Phone:</b>+1800-888-888</div>
             </div>          
-        </div>
-        
-        <div class="picture">
-            <img src="./images/img2.png" alt="Ambulance" width="300px">
-        </div>
-        
-    </div>
+            <div class="picture">
+            <img src="./images/img2.png" alt="Ambulance" style="width: 300px; margin-left:100px;" >
+            </div>
+            </div>
     <div class="details">
         <div class="heading">
             <h3 >SERVICES WE OFFER</h3>
@@ -89,34 +139,28 @@
     <div class="service-details">
         <div class="basic-support">
             <img src="./images/img1.png" alt="basic life support" width="200px">
-            <p>
+            <p style="font-size: large;">
                 For patients who need medical transportation, there is a bed for patients, pulse monitor and oxygen device.
             </p>
         </div>
         <div class="mortuary-service">
             <img src="./images/img4.jpg" alt="mortuary services" width="200px">
-            <p>
+            <p style="font-size: large;">
                 Mortuary ambulance services are used to move the dead body from one place to another.
             </p>
         </div>
         <div class="advanced-support">
             <img src="./images/img5.jpg" alt="advanced life support services" width="200px">
-            <p>
+            <p style="font-size: large;">
                 ALS ambulance is equipped with ventilator, ECG monitoring device and paramedic staff.
             </p>
         </div>
         <div class="patient-transport">
             <img src="./images/img3.png" alt="patient transport" width="230px">
-            <p>
+            <p style="font-size: large;">
                 PTV is a non emergency patient transport vehicle fully equipped just like a normal ambulance.
             </p>
         </div>
-        <div class="image">
-            <div class="hospital-logo">
-                <img src="Images/logo.png" alt="bmshospital" width="50px">
-         </div>
-        
-        
         </div>
 </body>
 </html>
