@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <head>
   <title>Dr. Manohar Badrappa</title>
@@ -38,7 +41,7 @@
   </style>
 </head>
 <body>
-  <img src="Images/logo.png" alt="bmshospital" class="logo" />
+   <a href="index.php"><img src="Images/logo.png" alt="bmshospital" class="logo" /></a>
   <br /><br /><br />
   <hr
     style="
@@ -51,11 +54,6 @@
   <p class="profile">PROFILE</p>
   <img src="Images/Doct4.jpg" alt="Doctor" />
   <p class="name">Dr. Manohar Badrappa</p>
-  <div>
-    <a href="doc2app.html"
-      ><button class="appointment"><b>BOOK AN APPOINTMENT</b></button></a
-    >
-  </div>
   <p class="info">
     MCh - Urology, DHMS (Diploma in Homeopathic Medicine and Surgery), MS -
     General Surgery
