@@ -1,4 +1,7 @@
-<!DOCTYPE html>
+<?php
+session_start();
+?><!DOCTYPE html>
+
 <html>
   <style>
     .logo {
@@ -13,7 +16,7 @@
     }
   </style>
   <body>
-    <img src="images/logo.png" alt="bmshospital" class="logo" />
+     <a href="index.php"><img src="Images/logo.png" alt="bmshospital" class="logo" /></a>
     <hr
       style="
         height: 2px;
