@@ -1,8 +1,12 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>bmshospital</title>
-    
+
     <style>
       html,
       body {
@@ -59,10 +63,10 @@
         align-items: center;
         text-align: center;
       }
-       .logo {
-      width: 300px;
-      height: auto;
-    }
+      .logo {
+        width: 300px;
+        height: auto;
+      }
       .banner::after {
         content: "";
         background-color: rgba(0, 0, 0, 0.2);
@@ -91,7 +95,7 @@
       .item span {
         color: red;
       }
-      
+
       .flax {
         display: flex;
         justify-content: space-around;
@@ -113,27 +117,33 @@
       button:hover {
         background: #669999;
       }
-      
     </style>
   </head>
   <body>
-       
     <div class="testbox">
-      <form action="/">
-            <img src="Images/logo.png" alt="bmshospital" class="logo" />
-        <div class="banner">
-          <h1 style="color: rgb(66, 65, 65); text-shadow: 2px 2px #669999;font-stretch: expanded;
-          font-size:45px;"><b>Book an Appointment</b></h1>
+      <form method="post">
+ <a href="index.php"><img src="Images/logo.png" alt="bmshospital" class="logo" /></a>
+         <div class="banner">
+          <h1
+            style="
+              color: rgb(66, 65, 65);
+              text-shadow: 2px 2px #669999;
+              font-stretch: expanded;
+              font-size: 45px;
+            "
+          >
+            <b>Book an Appointment</b>
+          </h1>
         </div>
         <div class="item">
           <label for="name">Name<span>*</span></label>
-          <input id="name" type="text" name="name" required />
+          <input id="name" type="text" name="pname" required />
         </div>
         <div class="item">
           <label for="email">Email Address<span>*</span></label>
           <input id="email" type="email" name="email" required />
         </div>
-        
+
         <div class="item">
           <label for="phone">Phone<span>*</span></label>
           <input
@@ -144,16 +154,16 @@
             required
           />
         </div>
-        <div class="item">
+        <!-- <div class="item">
           <label for="bdate">Date<span>*</span></label>
           <input id="bdate" type="date" name="bdate" required />
           <i class="fas fa-calendar-alt"></i>
-        </div>
+        </div> -->
         <div class="flax">
           <div class="item">
             <p>Start Time</p>
             <select>
-              <option selected value="" disabled selected></option>
+              <option selected value="" label="time" name = "timing"></option>
               <option value="9A">9 AM</option>
               <option value="10A">10 AM</option>
               <option value="11A">11 Am</option>
@@ -165,36 +175,23 @@
               <option value="5P">5 Pm</option>
             </select>
           </div>
-          <div class="item" style="display: flex; width: 1cm;">
-          <label for="department">Department<span>*</span></label>
-          <select id="department" name="department" required>
-              <optgroup label="Select reason"></optgroup>
-  <option value="Routine checkup">Routine checkup</option>
-  <option value="Sick visit">Sick visit</option>
-  <option value="Counseling Services">Counseling Services</option>
-  <option value="ENT">ENT</option>
-  <option value="Dental">Dental</option>
-  <option value="General Surgery">General Surgery</option>
-  <option value="Obstetrician and Gynecology">Obstetrician and Gynecology</option>
-  <option value="Pediatrics">Pediatrics</option>
-  <option value="Orthopedic and Physiotherapy">Orthopedic and Physiotherapy</option>
-  <option value="Diabetology">Diabetology</option>
-  <option value="Gastroenterology">Gastroenterology</option>
-  <option value="Oncology">Oncology</option>
-  <option value="Physiotherapy">Physiotherapy</option>
-  <option value="Cardiology">ENT</option>
-  <option value="Pulmonology">Pulmonology</option>
-  <option value="Urology">Urology</option>
-  <option value="Nephrology">Nephrology</option>
-  <option value="Ophthalmology">Ophthalmology</option>
-  <option value="Neurology">Neurology</option>
-  <option value="Thermal Mammography">Thermal Mammography</option>
-  <option value="Cosmetology">Cosmetology</option>
-</select>
-         
-        </div>
-        <div class="btn-block">
-          <button type="submit" href="/">Submit</button>
+          <div class="item" style="display: flex; width: 1cm">
+            <label for="department">Doctors<span>*</span></label>
+            <select id="department" name="department" required>
+              <option value="">Select</option>
+              <option value="">Dr.Adarsh C K- Gastroenterologist</option>
+              <option value="">Dr.Mahendra Jain-Urologist</option>
+              <option value="">Dr.Maiya G.L-General Surgeon</option>
+              <option value="">Dr.Manohar Badrappa-Urologist</option>
+              <option value="">Dr. Shekar Y N-Dermatologist</option>
+              <option value="">Dr. Venkatesh Prasad-Orthopedist</option>
+              <option value="">Dr. Yeriswamy M.C-Cardiologist</option>
+              <option value="">Dr. Raghuveer H N-Radiologist</option>
+            </select>
+          </div>
+          <div class="btn-block">
+            <button type="submit">Submit</button>
+          </div>
         </div>
       </form>
     </div>
