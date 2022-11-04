@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
   <title>bmshospital</title>
@@ -81,8 +84,8 @@ font-weight: 600;
     <style></style>
   </head>
   <body>
-    <img src="Images/logo.png" alt="bmshospital" class="logo" />
-    <hr
+ <a href="index.php"><img src="Images/logo.png" alt="bmshospital" class="logo" /></a>   
+  <hr
       style="
         height: 2px;
         border-width: 0;
@@ -91,29 +94,28 @@ font-weight: 600;
       "
     />
     <header>  
-<nav>  
-<ul>  
-<li>  
-<a href="index.html"> Home </a>  
-</li>  
-<li>  
-<a href="doctors.html"> Doctors </a>  
-</li>  
-<li>  
-<a href="ambulance.html"> Ambulance </a>  
-</li>  
-<li> <a href="covid.html"> Covid-19 </a>  
-</li>  
-<li>  
-<a href="lab.html"> Lab tests </a>  
-</li>
-<li>  
-<a href="https://maps.app.goo.gl/8LtMLmSCuywuBxoT9"> Location </a>  
-</li>
-<li> <a href="contact.html"> Contact </a>  
-</li>
-</ul>  
-</nav>  
+<nav>
+        <ul>
+          <li>
+            <a href="index.php"> Home </a>
+          </li>
+          <li>
+            <a href="doctors.php"> Doctors </a>
+          </li>
+          <li>
+            <a href="ambulance.php"> Ambulance </a>
+          </li>
+          <li><a href="covid.php"> Covid-19 </a></li>
+          <li>
+            <a href="lab.php"> Lab tests </a>
+          </li>
+          <li>
+            <a href="https://maps.app.goo.gl/8LtMLmSCuywuBxoT9"> Location </a>
+          </li>
+          <li><a href="contact.php"> Contact </a></li>
+          <li><a href="stafflogin.php"> Staff login </a></li>
+        </ul>
+      </nav>
 </header>  <br>
  <h1 class="doch"><b>COVID 19</b></h1><br><br><br><br>
 <div class="gallery">
@@ -172,7 +174,7 @@ font-weight: 600;
       </ul>
     </p>
     <br>
-    <h2 class="subhead">FIIRST STEPS TO TAKE IF YOU START OBSERVING SYMPTOMS</h2>
+    <h2 class="subhead">FIRST STEPS TO TAKE IF YOU START OBSERVING SYMPTOMS</h2>
     <p class="text">Quarantine and isolation should actually start from the first day you start spotting
        symptoms. Do not wait for the test results to come up and instead, start following from the initial 
        days symptoms start to show up.<br><br>
