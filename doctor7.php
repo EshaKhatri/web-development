@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <head>
   <title>Dr. Yeriswamy M.C</title>
@@ -38,7 +41,7 @@
   </style>
 </head>
 <body>
-  <img src="Images/logo.png" alt="bmshospital" class="logo" />
+   <a href="index.php"><img src="Images/logo.png" alt="bmshospital" class="logo" /></a>
   <br />
   <br />
   <br />
@@ -53,11 +56,6 @@
   <p class="profile">PROFILE</p>
   <img src="Images/Doct8.jpg" alt="Doctor" />
   <p class="name">Dr. Yeriswamy M.C</p>
-  <div>
-    <a href="doc7app.html"
-      ><button class="appointment"><b>BOOK AN APPOINTMENT</b></button></a
-    >
-  </div>
   <p class="info">
     DM - Cardiology, MBBS
     <br />
