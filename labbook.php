@@ -1,9 +1,12 @@
 
+<?php
+session_start();
+?>
 <!DOCTYPE html>
-<html>
+<html lang='en'>
   <head>
     <title>bmshospital</title>
-  
+
     <style>
       html,
       body {
@@ -23,7 +26,6 @@
         font-family: Roboto, Arial, sans-serif;
         font-size: 14px;
         color: #666;
-        
       }
       h1 {
         position: absolute;
@@ -61,10 +63,10 @@
         align-items: center;
         text-align: center;
       }
-       .logo {
-      width: 300px;
-      height: auto;
-    }
+      .logo {
+        width: 300px;
+        height: auto;
+      }
       .banner::after {
         content: "";
         background-color: rgba(0, 0, 0, 0.2);
@@ -117,12 +119,19 @@
     </style>
   </head>
   <body>
-       
     <div class="testbox">
-      <form action="/">
-            <img src="images/logo.png" alt="bmshospital" class="logo" />
+      <form  method="post">
+   <a href="index.php"><img src="Images/logo.png" alt="bmshospital" class="logo" /></a>
         <div class="banner">
-          <h1 style="color: rgb(66, 65, 65); text-shadow: 2px 2px #669999;font-stretch: expanded;"><b>Book an Appointment</b></h1>
+          <h1
+            style="
+              color: rgb(66, 65, 65);
+              text-shadow: 2px 2px #669999;
+              font-stretch: expanded;
+            "
+          >
+            <b>Book an Appointment</b>
+          </h1>
         </div>
         <div class="item">
           <label for="name">Name<span>*</span></label>
@@ -132,7 +141,7 @@
           <label for="email">Email Address<span>*</span></label>
           <input id="email" type="email" name="email" required />
         </div>
-        
+
         <div class="item">
           <label for="phone">Phone<span>*</span></label>
           <input
@@ -143,16 +152,16 @@
             required
           />
         </div>
-        <div class="item">
+        <!-- <div class="item">
           <label for="bdate">Date<span>*</span></label>
           <input id="bdate" type="date" name="bdate" required />
           <i class="fas fa-calendar-alt"></i>
-        </div>
+        </div> -->
         <div class="flax">
           <div class="item">
             <p>Start Time</p>
             <select>
-              <option selected value="" disabled selected></option>
+              <option selected value="" label="time" namr ="time"></option>
               <option value="9A">9 AM</option>
               <option value="10A">10 AM</option>
               <option value="11A">11 Am</option>
@@ -164,20 +173,22 @@
               <option value="5P">5 Pm</option>
             </select>
           </div>
-          <div class="item" style="display: flex; width: 1cm;">
-          <label for="Lab test">Lab test<span>*  </span></label>
-          <select id="Lab test" name="Lab test" required>
+          <div class="item" style="display: flex; width: 1cm">
+            <label for="Labtest">Lab test<span>*</span></label>
+            <select id="Labtest" name="Labtest" required>
               <optgroup label="Select reason"></optgroup>
-  <option value="COMPLETE BLOOD COUNT">COMPLETE BLOOD COUNT</option>
-  <option value="HEMOGLOBIN TEST">HEMOGLOBIN TEST</option>
-  <option value="URINALYSIS">URINALYSIS</option>
-  <option value="THYROID STIMULATING HORMONE">THYROID STIMULATING HORMONE</option>
-  <option value="PROTHROMBIN TIME">PROTHROMBIN TIME</option>
-</select>
-         
-        </div>
-        <div class="btn-block">
-          <button type="submit" href="/">Submit</button>
+              <option value="">COMPLETE BLOOD COUNT</option>
+              <option value="HEMOGLOBIN TEST">HEMOGLOBIN TEST</option>
+              <option value="URINALYSIS">URINALYSIS</option>
+              <option value="THYROID STIMULATING HORMONE">
+                THYROID STIMULATING HORMONE
+              </option>
+              <option value="PROTHROMBIN TIME">PROTHROMBIN TIME</option>
+            </select>
+          </div>
+          <div class="btn-block">
+            <button type="submit">Submit</button>
+          </div>
         </div>
       </form>
     </div>
