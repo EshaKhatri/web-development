@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -52,8 +55,7 @@
     </style>
   </head>
   <body>
-    <img src="Images/logo.png" alt="bmshospital" class="logo" />
-    <br />
+ <a href="index.php"><img src="Images/logo.png" alt="bmshospital" class="logo" /></a>    <br />
     <br />
     <br />
     <hr
@@ -68,22 +70,23 @@
       <nav>
         <ul>
           <li>
-            <a href="index.html"> Home </a>
+            <a href="index.php"> Home </a>
           </li>
           <li>
-            <a href="doctors.html"> Doctors </a>
+            <a href="doctors.php"> Doctors </a>
           </li>
           <li>
-            <a href="ambulance.html"> Ambulance </a>
+            <a href="ambulance.php"> Ambulance </a>
           </li>
-          <li><a href="covid.html"> Covid-19 </a></li>
+          <li><a href="covid.php"> Covid-19 </a></li>
           <li>
-            <a href="lab.html"> Lab tests </a>
+            <a href="lab.php"> Lab tests </a>
           </li>
           <li>
             <a href="https://maps.app.goo.gl/8LtMLmSCuywuBxoT9"> Location </a>
           </li>
-          <li><a href="contact.html"> Contact </a></li>
+          <li><a href="contact.php"> Contact </a></li>
+          <li><a href="stafflogin.php"> Staff login </a></li>
         </ul>
       </nav>
     </header>
