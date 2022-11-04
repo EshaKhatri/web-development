@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
     <html>
     <head>
@@ -48,9 +51,9 @@
             }
             .phone{
                 color: rgb(235, 77, 77);
-                padding-left: 30px;
-                text-align: left;
-                margin-left: 60px;
+                text-align: right;
+                margin-left: 1000px;
+                font-size: x-large;
             }
             .picture{
                 flex-basis: 50%;
@@ -80,32 +83,31 @@
         </style>
     </head>
     <body>
-        <img src="Images/logo.png" alt="bmshospital" class="logo">
-        <hr style="height: 2px; border-width: 0; color: rgb(158, 147, 147); background-color: rgb(158, 147, 147);"/>
+ <a href="index.php"><img src="Images/logo.png" alt="bmshospital" class="logo" /></a>
+         <hr style="height: 2px; border-width: 0; color: rgb(158, 147, 147); background-color: rgb(158, 147, 147);"/>
     <header>  
-        <nav>  
-        <ul>  
-        <li>  
-        <a href="index.html"> Home </a>  
-        </li>  
-        <li>  
-        <a href="doctors.html"> Doctors </a>  
-        </li>  
-        <li>  
-        <a href="ambulance.html"> Ambulance </a>  
-        </li>  
-        <li> <a href="covid.html"> Covid-19 </a>  
-        </li>  
-        <li>  
-        <a href="lab.html"> Lab tests </a>  
-        </li>
-        <li>  
-        <a href="https://maps.app.goo.gl/8LtMLmSCuywuBxoT9"> Location </a>  
-        </li>
-        <li> <a href="contact.html"> Contact </a>  
-        </li>
-        </ul>  
-        </nav>  
+        <nav>
+        <ul>
+          <li>
+            <a href="index.php"> Home </a>
+          </li>
+          <li>
+            <a href="doctors.php"> Doctors </a>
+          </li>
+          <li>
+            <a href="ambulance.php"> Ambulance </a>
+          </li>
+          <li><a href="covid.php"> Covid-19 </a></li>
+          <li>
+            <a href="lab.php"> Lab tests </a>
+          </li>
+          <li>
+            <a href="https://maps.app.goo.gl/8LtMLmSCuywuBxoT9"> Location </a>
+          </li>
+          <li><a href="contact.php"> Contact </a></li>
+          <li><a href="stafflogin.php"> Staff login </a></li>
+        </ul>
+      </nav>
     </header>  
     <body>
         <br>
@@ -116,15 +118,8 @@
                 <p class="title">Your health emergency is our priority.</p>
                 <div class="container">
                 <div class="phone">
-                    <b>Phone:</b>+1800-888-888</div>
-                </div> 
-                <div>
-                    
-                     <a href="bookabmulance.html">
-                         <button class="form"><b>Click Here To Book an Ambulance</b></button>
-                    </a>
-                    
-                  </div>        
+                    Phone :<b> +1800-888-888</b></div>
+                </div>       
                 <div class="picture">
                 <img src="./images/img2.png" alt="Ambulance" style="width: 300px; margin-left:100px;" >
                 </div>
