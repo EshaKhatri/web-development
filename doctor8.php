@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <head>
   <title>Dr. Raghuveer H N</title>
@@ -38,7 +41,7 @@
   </style>
 </head>
 <body>
-  <img src="Images/logo.png" alt="bmshospital" class="logo" />
+   <a href="index.php"><img src="Images/logo.png" alt="bmshospital" class="logo" /></a>
   <br />
   <br />
   <br />
@@ -53,11 +56,6 @@
   <p class="profile">PROFILE</p>
   <img src="Images/Doct5.jpg" alt="Doctor" />
   <p class="name">Dr. Raghuveer H N</p>
-  <div>
-    <a href="doc8app.html"
-      ><button class="appointment"><b>BOOK AN APPOINTMENT</b></button></a
-    >
-  </div>
   <p class="info">
     MBBS, Diploma in Medical Radio-Diagnosis
     <br />
