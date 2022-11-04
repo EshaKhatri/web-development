@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <head>
   <title>Dr. Shekar Y N</title>
@@ -38,7 +41,7 @@
   </style>
 </head>
 <body>
-  <img src="Images/logo.png" alt="bmshospital" class="logo" />
+   <a href="index.php"><img src="Images/logo.png" alt="bmshospital" class="logo" /></a>
   <br /><br /><br />
   <hr
     style="
@@ -51,11 +54,7 @@
   <p class="profile">PROFILE</p>
   <img src="Images/Doct6.jpg" alt="Doctor" />
   <p class="name">Dr. Shekar Y N</p>
-  <div>
-    <a href="doc5app.html"
-      ><button class="appointment"><b>BOOK AN APPOINTMENT</b></button></a
-    >
-  </div>
+ 
   <p class="info">
     MBBS, DVD
     <br />
