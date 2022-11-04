@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <head>
 <body style="background-color: white;">
     <title>bmshospital</title>
@@ -57,7 +60,7 @@ font-size: 18px;
 </style>
 </head>
 <body id="main">
-    <img src="images/logo.png" alt="bmshospital" class="logo">
+   <a href="index.php"><img src="Images/logo.png" alt="bmshospital" class="logo" /></a>
     <hr
       style="
         height: 0.8px;
@@ -68,36 +71,37 @@ font-size: 18px;
       <nav>
         <ul>
           <li>
-            <a href="index.html"> Home </a>
+            <a href="index.php"> Home </a>
           </li>
           <li>
-            <a href="doctors.html"> Doctors </a>
+            <a href="doctors.php"> Doctors </a>
           </li>
           <li>
-            <a href="ambulance.html"> Ambulance </a>
+            <a href="ambulance.php"> Ambulance </a>
           </li>
-          <li><a href="covid.html"> Covid-19 </a></li>
+          <li><a href="covid.php"> Covid-19 </a></li>
           <li>
-            <a href="lab.html"> Lab tests </a>
+            <a href="lab.php"> Lab tests </a>
           </li>
           <li>
             <a href="https://maps.app.goo.gl/8LtMLmSCuywuBxoT9"> Location </a>
           </li>
-          <li><a href="contact.html"> Contact </a></li>
+          <li><a href="contact.php"> Contact </a></li>
+          <li><a href="stafflogin.php"> Staff login </a></li>
         </ul>
       </nav>
     </header>
 <h2 style="text-align:center" class="title">LAB TESTS</h2>
-<p><a href="completebloodcount.html" class="point">Complete blood count</a></p>
+<p><a href="completebloodcount.php" class="point">Complete blood count</a></p>
 <div>
-      <a href="labbook.html"
+      <a href="labbook.php"
         ><button class="button"><b>Book an appointment</b></button></a
       >
     </div>
-<p><a href="hemoglobin.html" class="point">Hemoglobin</a></p>
-<p><a href="urinalysis.html" class="point">Urinalysis</a></p>
-<p><a href="thyroidstimulatinghormone.html" class="point">Thyroid stimulating hormone</a></p>
-<p><a href="prothrombintime.html" class="point">Prothrombin time</a></p><br>
+<p><a href="hemoglobin.php" class="point">Hemoglobin</a></p>
+<p><a href="urinalysis.php" class="point">Urinalysis</a></p>
+<p><a href="thyroidstimulatinghormone.php" class="point">Thyroid stimulating hormone</a></p>
+<p><a href="prothrombintime.php" class="point">Prothrombin time</a></p><br>
 
 <div class="picture">
 <img src="images/LT1.jpeg" width="360" height="300">
